@@ -54,5 +54,11 @@ a:link, a:visited {
     background-color: #bd0909;
     color: #1f1e1e;
   }
-
-  
+.active{
+    background-color: #4b4646;
+}
+/*img{
+width: 50%;
+height: ;
+}  
+*/
