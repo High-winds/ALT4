@@ -28,8 +28,9 @@ a:link, a:visited {
     border-collapse: collapse;
   }
   table {
-    padding-left: 10px;
-    padding-right: 10px;
+    margin-left: 10px;
+    width: 98.5%;
+    height: 98.5%;
   }
   .header {
     background-color: #f1f1f1;
@@ -63,8 +64,8 @@ a:link, a:visited {
     background-color: #4b4646;
 }
 h1, p {
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 video {
