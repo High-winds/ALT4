@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Evaluation stage</title>
+<link rel="stylesheet" href="style.css">
+<link href="\ALT 4\images/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html"> Home page</a>
+        <a href="investigate.html"> Investigate stage</a>
+        <a href="plan.html"> Plan stage</a>
+        <a href="design.html"> Design stage</a>
+        <a href="create.html"> Create stage</a>
+        <a href="testing.html"> Testing stage</a>
+        <a href="documentation.html"> Documentation stage</a>
+    </div>
+<h1>Testing stage</h1>
+<p>
+    For the testing of our system, we will have to test that the system can detect and alert that a fall has happened, not mistake movements such as walking for falls and be able to distinguish between a soft and hard fall. Therefore, the three main inputs we will be testing the response of are, walking/none falling movement, a soft/normal fall and a hard/ dangerous fall. Since the accelerometer inputs are hard to precisely control, we will do each test a certain number of times to minimize outliers and mistakes. We may also need to do different degrees of acceleration in each category to further cover all grounds of testing (e.g. Try to test boundary values). 
+</p>
+<p style="font-size: 16.5px;">
+In our testing we will divide the analogue value we could receive into; below triggering value, above triggering value but below severe value, and above severe value. As previously mentioned, we will be using boundary values by testing values as close to the points between, no detection and soft detection, and soft detection and hard detection as possible. Possible errors that could come up might be at either the boundary values close to two partitions or at very high values, however since there is no chance for absurd number (e.g. Unrealistically high or negative), since all inputs are real world inputs, there is not much room for error. 
+</p>
+ 
+<p style="font-size: 17px;">
+We will use unit testing to isolate the tow micro:bits and their unique systems. We can divide the sender micro:bit into detecting a fall and outputting a signal whilst the receiver can be split into receiving the signal and activating the alarm. We can individually test these systems by manipulating and isolating code and factors such as distance of micro:bits, severity of fall and distance of personnel from alarm. 
+</p>
+<p style="font-size: 17.5px;">
+    The videos in order are: <br> 
+    <ul>
+        <li>Testing of the 'High alarm' mode </li>
+        <li>'Low alarm' mode </li>
+        <li>And testing of the conectavitity and function of both micro:bits.</li>
+    </ul>
+    <video width="20%" height="12.5%" controls>
+        <source src="/ALT 4/images/High alarm testing.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    <video width="20%" height="12.5%" controls>
+        <source src="/ALT 4/images/Low alarm testing.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video width="20%" height="12.5%" controls>
+        <source src="/ALT 4/images/dual microbit testing.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+</p>
+
+</body>
+</html>

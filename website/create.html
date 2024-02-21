@@ -13,10 +13,26 @@
         <a href="plan.html"> Plan stage</a>
         <a href="design.html"> Design stage</a>
         <a href="create.html" style="background-color: #4b4646;" > Create stage</a>
-        <a href="evaluation.html"> Evaluation stage</a>
+        <a href="testing.html"> Testing stage</a>
         <a href="documentation.html"> Documentation stage</a>
     </div>
 <h1>Create stage</h1>
+<p>
 
+    Our system works by detecting when the micro:bit user has fallen, sends a signal out that is picked up by a different micro:bit and triggers an alarm. The BBC micro:bit has a built-in accelerometer that can detect changes in speed. This means we can have precise values that will alert the micro:bit of a fall, rather than subtle movements like walking or getting up. Once the internal sensor has detected enough force to be deemed a fall it will output a signal (for the purposes of our in-class system and testing we used a radio group 34), for out other, receiver micro:bit to pick up. Once this signal has been detected, the receiver will activate an alarm sound. This alarm sound comes from a V2 micro:bit speaker that we used in place of a buzzer. There are also pins that connect from the micro:bit to a breadboard with a multi-coloured LED that flashes different colours in time with the alarm sound. Altogether, the micro:bit detects a fall using an accelerometer, sends out a signal that is detected by the receiver, which then outputs an alarm sound with flashing lights. 
+
+</p>
+
+<p>
+    Since the goal of our system is to be able to detect when a patient has fallen, we decided that the best way to go forward is by using the micro:bit's built-in accelerometer. This is useful for both simplicity of design and portability, since the patient wants to be able to easily carry the micro:bit. The accelerometer can detect when the micro:bit has quickly reached a certain speed, such as when falling. This input detection is better than alternatives such as shake detection as we have finer control over what movements will be detected and minimize risk of false alarms. 
+</p>
+
+<p>
+    The micro:bits communicate by sending and receiving radio signals. We have to different kinds of micro:bits in our system, the receiver and the sender. Once the sender as detected the necessary inputs, it sends a signal, and the receiver outputs the lights and alarm sounds. The main problem we had to avoid, as previously mentioned was how to properly detect that a fall had occurred. We had to set a specific analogue value that could be interpreted and depending on that value, be either sent, not sent, or sent as a 'bad fall'. 
+</p>
+<p>
+    <img src="\ALT 4\images/photo of microbits.jpeg" alt="A rough sketch of the system" style="height: 335px; width: 252; border: #000000;border-width: 5px; border-style: solid;">
+
+</p>
 </body>
 </html>
